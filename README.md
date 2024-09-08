@@ -11,3 +11,8 @@
 ## Day 3
 
 - Files and Folder Structure
+
+## Day 4
+
+- Interpolation
+
