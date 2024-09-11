@@ -19,3 +19,7 @@
 ## Day 5
 
 - Angular CLI & Important Commands.md
+
+## Day 6
+
+- Component
