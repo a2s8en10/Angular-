@@ -1,0 +1,6 @@
+<app-parent-to-child [item]="data"> </app-parent-to-child>
+<button (click)="changeData()" >change data</button>
+
+<ul *ngFor="let user of userDetail">
+  <app-user-detail [data]="user"></app-user-detail>
+</ul>

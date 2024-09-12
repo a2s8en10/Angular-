@@ -23,3 +23,7 @@
 ## Day 6
 
 - Component
+
+## Day 7
+
+- Component with Inline Style & Template

@@ -2,12 +2,14 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { TodoComponent } from './todo/todo.component';
+import { ParentToChildComponent } from './parent-to-child/parent-to-child.component';
+import { UserDetailComponent } from './user-detail/user-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TodoComponent
+    ParentToChildComponent,
+    UserDetailComponent
   ],
   imports: [
     BrowserModule
