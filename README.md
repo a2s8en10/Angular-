@@ -27,3 +27,11 @@
 ## Day 7
 
 - Component with Inline Style & Template
+
+## Day 8
+
+- Module
+
+## Day 9
+
+- Make and Call Function on Button Click

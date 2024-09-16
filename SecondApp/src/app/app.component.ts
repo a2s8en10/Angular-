@@ -20,4 +20,12 @@ export class AppComponent {
     {name: "suyash ", email: "suy.gmail.com"},
     {name: "jaya ", email: "jaya.gmail.com"},
   ]
+
+  user = "x"
+  updateData(item:string)
+  {
+    console.log(item);
+    this.user=item;
+  }
+
 }
