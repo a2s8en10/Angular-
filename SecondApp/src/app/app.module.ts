@@ -10,6 +10,11 @@ import { PipesComponent } from './pipes/pipes.component';
 import { PipesPipe } from './customPipes/pipes.pipe';
 import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
+import { ElementDirective } from './directive/element.directive';
+// import {NgForm} from '@angular/forms';
+// import { ReactiveFormsModule} from '@angular/forms';
+
+
 
 @NgModule({
   declarations: [
@@ -22,6 +27,7 @@ import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
     PipesPipe,
     TemplateDrivenFormComponent,
     ReactiveFormComponent,
+    ElementDirective,
   ],
   imports: [
     BrowserModule,FormsModule

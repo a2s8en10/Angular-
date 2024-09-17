@@ -35,3 +35,7 @@
 ## Day 9
 
 - Make and Call Function on Button Click
+
+## Day 10
+
+- Events, Blur, Keyup, Mouseover Etc

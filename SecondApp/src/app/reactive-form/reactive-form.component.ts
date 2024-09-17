@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import{ FormControl, FormControlName, FormGroup } from '@angular/forms';
+import{ FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-reactive-form',
@@ -14,13 +14,12 @@ export class ReactiveFormComponent implements OnInit {
   }
 
   loginForm = new FormGroup({
-    username: new FormControl(''),
+    name: new FormControl(''),
     password: new FormControl('')
   })
 
-  loginUser(){
+  update(){
     console.warn(this.loginForm.value);
-
   }
 
 }
