@@ -10,8 +10,10 @@ export class AboutComponent implements OnInit {
 
   constructor(private Data : ActivatedRoute) { }
 
+  aboutId:any;
   ngOnInit(): void {
-    console.log("this.Data.snapshot.paraMap.get('id')");
+    console.log("About ID is : ",this.Data.snapshot.paramMap.get('id'));
+    this.aboutId=this.Data.snapshot.paramMap.get('id')
   }
 
 }

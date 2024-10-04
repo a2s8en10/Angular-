@@ -1,0 +1,18 @@
+<h1>Api</h1>
+<ul>
+  <li *ngFor="let user of users" >
+    {{user.name}}
+  </li>
+</ul>
+
+<form #usersForm="ngForm" (ngSubmit)="getUserFormData(usersForm.value)" >
+
+  <input type="text" ngModel name="name" placeholder="Enter name">
+  <br><br>
+  <input type="text" ngModel name="email" placeholder="Enter email">
+  <br><br>
+  <input type="text" ngModel name="password" placeholder="enter password">
+  <br><br>
+  <button>Add new user</button>
+
+</form>
