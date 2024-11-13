@@ -10,12 +10,14 @@
 <section class="courses">
   <div class="container">
     <h1 class="text-center">All Course</h1>
-    <div class="row mt-5">
-      @for (course of courses; track $index) {
-      <div class="col-lg-4 mb-3">
-        <app-course [course]="course"></app-course>
-      </div>
-      }
-    </div>
+
+    <!-- <div class="row mt-5">
+        @for (course of courses; track $index) {
+        <div class="col-lg-4 mb-3">
+          <app-course [course]="course"></app-course>
+        </div>
+        }
+    </div> -->
+    <app-course [courses]="courses" ></app-course>
   </div>
 </section>

@@ -9,13 +9,12 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 })
 export class CourseComponent {
 
-  @Input() course: any;
-
+  @Input() courses: any;
   // delete operation
-  @Input() isDelete = false;
+  @Input() isAdmin = false;
   @Output() del = new EventEmitter();
 
-  deleteCourse(){
-    this.del.emit(this.course);
+  deleteCourse(course:any){       // single course select
+    this.del.emit(course);
   }
 }
