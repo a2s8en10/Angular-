@@ -21,25 +21,26 @@ export class AdminComponent {
   // showError = false;
   // --------------- using signal ----------
   model = signal<any>({});
-  cover = signal <string | null > (null);
-  cover_file = signal <any>(null);
+  cover = signal<string | null>(null);
+  cover_file = signal<any>(null);
   showError = signal<boolean>(false);
+
+  // isActive = signal<boolean>(false);
 
   // courses: any[] = [];
 
   private courseService = inject(CourseService)
 
+  constructor() {
+    // effect(() => {
+    //   console.log(this.isActive());
+    // });
+  }
   // ngOnInit(){
   //   this.getCourses();
   // }
 
-  // getCourses(){
-  //   const data = localStorage.getItem("Strings.STORAGE_KEY");
-  //   console.log(data);
-  //   if (data){
-  //     this.courses = JSON.parse(data);
-  //   }
-  // }
+
   OnFileSelected(event: any) {
     console.log(event);
     const file = event.target.files[0];
@@ -87,7 +88,7 @@ export class AdminComponent {
       const formValue = form.value;
       console.log(formValue);
 
-      const data : Course = {
+      const data: Course = {
         ...formValue,
         image: this.cover(),
         // id : this.courses.length + 1,
@@ -95,11 +96,11 @@ export class AdminComponent {
 
       await this.courseService.addCourse(data);
 
-    //   this.courses = [...this.courses, data];
-    //   this.setItem(this.courses);
+      //   this.courses = [...this.courses, data];
+      //   this.setItem(this.courses);
 
-    this.clearForm(form);
-    }catch (e) {
+      this.clearForm(form);
+    } catch (e) {
       console.log(e);
     }
   }
